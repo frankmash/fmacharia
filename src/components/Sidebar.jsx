@@ -1,5 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
-import { Code2, Briefcase, Mail, Newspaper } from "lucide-react";
+import {
+  Code2,
+  Briefcase,
+  Mail,
+  Newspaper,
+  Home,
+  User,
+  Folder,
+  PenLine,
+  FileText,
+} from "lucide-react";
 
 function GithubIcon(props) {
   return (
@@ -18,12 +28,12 @@ function LinkedinIcon(props) {
 }
 
 const navLinks = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/projects", label: "Projects" },
-  { to: "/writing", label: "Writing" },
-  { to: "/cv", label: "CV" },
-  { to: "/contact", label: "Contact" },
+  { to: "/", label: "Home", icon: Home },
+  { to: "/about", label: "About", icon: User },
+  { to: "/projects", label: "Projects", icon: Folder },
+  { to: "/writing", label: "Writing", icon: PenLine },
+  { to: "/cv", label: "CV", icon: FileText },
+  { to: "/contact", label: "Contact", icon: Mail },
 ];
 
 export default function Sidebar() {
@@ -116,19 +126,21 @@ export default function Sidebar() {
         </div>
       </div>
 
-      <nav className="flex flex-row flex-wrap gap-x-5 gap-y-2 text-sm text-neutral-500 sm:flex-col sm:gap-2">
+      <nav className="flex flex-row flex-wrap gap-1.5 text-sm sm:flex-col sm:gap-1">
         {navLinks.map((link) => {
           const active = location.pathname === link.to;
+          const Icon = link.icon;
           return (
             <Link
               key={link.to}
               to={link.to}
               className={
                 active
-                  ? "font-medium text-emerald-600"
-                  : "transition-colors hover:text-emerald-600"
+                  ? "flex items-center gap-2.5 rounded-md border border-emerald-500 bg-emerald-50 px-3 py-2 font-medium text-emerald-700 transition-colors"
+                  : "flex items-center gap-2.5 rounded-md border border-transparent px-3 py-2 text-neutral-600 transition-colors hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700"
               }
             >
+              <Icon size={17} className="shrink-0" />
               {link.label}
             </Link>
           );

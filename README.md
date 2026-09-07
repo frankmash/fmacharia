@@ -1,6 +1,6 @@
 # Portfolio
 
-My personal site for [fmacharia.com](https://fmacharia.com).
+My personal website, live at [fmacharia.com](https://fmacharia.com).
 
 ## License
 
