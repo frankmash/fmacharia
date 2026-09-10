@@ -4,10 +4,10 @@ export default function About() {
   return (
     <div className="max-w-2xl">
       <Helmet>
-        <title>About — Frankline Macharia</title>
+        <title>About - Frankline Macharia</title>
         <meta
           name="description"
-          content="About Frankline Macharia — front-end & software developer and SEO/GEO specialist based in Nakuru, Kenya, currently at Schlacht Media and founder of Rent Sawa Technologies."
+          content="About Frankline Macharia - front-end & software developer and SEO/GEO specialist based in Nakuru, Kenya, currently at Schlacht Media and founder of Rent Sawa Technologies."
         />
       </Helmet>
 

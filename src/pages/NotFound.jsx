@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col items-center py-10 text-center sm:items-start sm:text-left">
       <Helmet>
-        <title>Page Not Found — Frankline Macharia</title>
+        <title>Page Not Found - Frankline Macharia</title>
         <meta name="robots" content="noindex" />
       </Helmet>
 
@@ -45,7 +45,7 @@ export default function NotFound() {
 
       <p className="mt-8 text-sm font-medium text-emerald-600">404</p>
       <h1 className="mt-1 text-3xl font-extrabold tracking-tight text-neutral-950 sm:text-4xl">
-        Boo — this page doesn't exist.
+        Boo - this page doesn't exist.
       </h1>
       <p className="mt-4 max-w-md text-base leading-7 text-neutral-600">
         Whatever you were looking for wandered off. It might have moved,
