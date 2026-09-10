@@ -69,9 +69,9 @@ export default function Sidebar() {
         </div>
 
         <p className="mt-1 text-sm text-neutral-500">
-          Web Developer & SEO Specialist
+          Front-End & Software Developer | SEO & GEO Specialist
         </p>
-        <p className="text-sm text-neutral-500">Eldoret, Kenya</p>
+        <p className="text-sm text-neutral-500">Nakuru, Kenya</p>
 
         <ul className="mt-4 space-y-2 text-sm text-neutral-500">
           <li className="flex items-center gap-2">
@@ -126,7 +126,7 @@ export default function Sidebar() {
         </div>
       </div>
 
-      <nav className="flex flex-row flex-wrap gap-1.5 text-sm sm:flex-col sm:gap-1">
+      <nav className="scrollbar-hide -mx-1 flex flex-row flex-nowrap gap-1.5 overflow-x-auto px-1 text-sm sm:mx-0 sm:flex-col sm:gap-1 sm:overflow-visible sm:px-0">
         {navLinks.map((link) => {
           const active = location.pathname === link.to;
           const Icon = link.icon;
@@ -136,8 +136,8 @@ export default function Sidebar() {
               to={link.to}
               className={
                 active
-                  ? "flex items-center gap-2.5 rounded-md border border-emerald-500 bg-emerald-50 px-3 py-2 font-medium text-emerald-700 transition-colors"
-                  : "flex items-center gap-2.5 rounded-md border border-transparent px-3 py-2 text-neutral-600 transition-colors hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700"
+                  ? "flex shrink-0 items-center gap-2.5 whitespace-nowrap rounded-md border border-emerald-500 bg-emerald-50 px-3 py-2 font-medium text-emerald-700 transition-colors"
+                  : "flex shrink-0 items-center gap-2.5 whitespace-nowrap rounded-md border border-transparent px-3 py-2 text-neutral-600 transition-colors hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700"
               }
             >
               <Icon size={17} className="shrink-0" />
