@@ -38,7 +38,7 @@ const work = [
       "Built and run a property management SaaS for Kenyan landlords and tenants (React, FastAPI, PostgreSQL).",
   },
   {
-    role: "Web Developer & SEO/SEM Specialist",
+    role: "Front-End & Software Developer | SEO & GEO Specialist",
     company: "Schlacht Media",
     period: "2024 — Present",
     description:
@@ -70,10 +70,10 @@ export default function Home() {
   return (
     <div>
       <Helmet>
-        <title>Frankline Macharia — Web Developer & SEO Specialist</title>
+        <title>Frankline Macharia — Front-End & Software Developer | SEO & GEO Specialist</title>
         <meta
           name="description"
-          content="Web developer and SEO/SEM specialist in Eldoret, Kenya. Founder of Rent Sawa Technologies. See selected projects and work history."
+          content="Front-end & software developer, SEO/GEO specialist in Nakuru, Kenya. Founder of Rent Sawa Technologies. See selected projects and work history."
         />
       </Helmet>
 

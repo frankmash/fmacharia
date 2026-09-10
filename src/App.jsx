@@ -33,7 +33,7 @@ function Layout({ children }) {
       <footer className="relative border-t border-neutral-200">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-6 text-xs text-neutral-500">
           <span>© {new Date().getFullYear()} Frankline Macharia</span>
-          <span>Eldoret, Kenya</span>
+          <span>Nakuru, Kenya</span>
         </div>
       </footer>
     </div>
