@@ -57,7 +57,7 @@ export default function Projects() {
   return (
     <div>
       <Helmet>
-        <title>Projects — Frankline Macharia</title>
+        <title>Projects - Frankline Macharia</title>
         <meta
           name="description"
           content="Projects built by Frankline Macharia, including RentSawa, Edunotes, Website Intelligence Engine and more."
@@ -83,7 +83,7 @@ export default function Projects() {
                   {project.title}
                 </span>
                 <span className="ml-2 text-sm text-neutral-500">
-                  — {project.description}
+                  - {project.description}
                 </span>
               </span>
 

@@ -4,7 +4,7 @@ export default function Cv() {
   return (
     <div className="max-w-2xl">
       <Helmet>
-        <title>CV — Frankline Macharia</title>
+        <title>CV - Frankline Macharia</title>
         <meta
           name="description"
           content="Download the CV of Frankline Macharia, front-end & software developer and SEO/GEO specialist based in Nakuru, Kenya."
@@ -17,7 +17,7 @@ export default function Cv() {
       </h1>
 
       <p className="mt-4 text-base leading-7 text-neutral-600">
-        Front-end & software developer, SEO/GEO specialist — experience, projects and
+        Front-end & software developer, SEO/GEO specialist - experience, projects and
         skills, in one PDF.
       </p>
 

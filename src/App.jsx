@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound";
 function Layout({ children }) {
   return (
     <div className="relative min-h-screen overflow-hidden bg-neutral-50 text-neutral-900">
-      {/* soft ink-like accent glow — kept subtle so it never fights the text */}
+      {/* soft ink-like accent glow - kept subtle so it never fights the text */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -left-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-emerald-400/20 blur-[100px]"

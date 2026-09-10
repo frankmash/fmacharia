@@ -52,6 +52,13 @@ const work = [
       "Build websites, web apps and automation tools for clients.",
   },
   {
+    role: "ICT Attachment",
+    company: "Nakuru County Government — Shabab Digital Centre",
+    period: "Sep — Nov 2023",
+    description:
+      "Resolved hardware/software issues, supported LAN management, on-site ICT support, and configured antivirus/system security.",
+  },
+  {
     role: "AI Data Annotator / Content Reviewer",
     company: "Remotasks",
     period: "Jan — Dec 2023",

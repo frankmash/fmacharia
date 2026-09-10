@@ -4,10 +4,10 @@ export default function Contact() {
   return (
     <div className="max-w-2xl">
       <Helmet>
-        <title>Contact — Frankline Macharia</title>
+        <title>Contact - Frankline Macharia</title>
         <meta
           name="description"
-          content="Get in touch with Frankline Macharia — email, GitHub, LinkedIn and MuckRack."
+          content="Get in touch with Frankline Macharia - email, GitHub, LinkedIn and MuckRack."
         />
       </Helmet>
 
@@ -17,7 +17,7 @@ export default function Contact() {
       </h1>
 
       <p className="mt-4 text-base leading-7 text-neutral-600">
-        Have an opportunity, a project, or just want to say hi — email is
+        Have an opportunity, a project, or just want to say hi - email is
         the fastest way to reach me.
       </p>
 

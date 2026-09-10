@@ -4,7 +4,7 @@ export default function Writing() {
   return (
     <div className="max-w-2xl">
       <Helmet>
-        <title>Writing — Frankline Macharia</title>
+        <title>Writing - Frankline Macharia</title>
         <meta
           name="description"
           content="Journalism and articles by Frankline Macharia, freelance journalist covering finance and politics."
