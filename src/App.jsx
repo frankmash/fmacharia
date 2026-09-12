@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Services from "./pages/Services";
 import Writing from "./pages/Writing";
 import Cv from "./pages/Cv";
 import Contact from "./pages/Contact";
@@ -48,6 +49,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/writing" element={<Writing />} />
           <Route path="/cv" element={<Cv />} />
           <Route path="/contact" element={<Contact />} />
