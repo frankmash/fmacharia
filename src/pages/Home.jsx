@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Code2, Search, Bot, PenLine } from "lucide-react";
 
 const projects = [
   {
@@ -40,34 +41,34 @@ const work = [
   {
     role: "Front-End & Software Developer | SEO & GEO Specialist",
     company: "Schlacht Media",
-    period: "2024 — Present",
+    period: "2024 - Present",
     description:
       "Manage and maintain client websites, work with APIs and analytics, handle technical SEO.",
   },
   {
     role: "Freelance Web Developer",
     company: "Self-Employed",
-    period: "2022 — Present",
+    period: "2022 - Present",
     description:
       "Build websites, web apps and automation tools for clients.",
   },
   {
     role: "ICT Attachment",
-    company: "Nakuru County Government — Shabab Digital Centre",
-    period: "Sep — Nov 2023",
+    company: "Nakuru County Government - Shabab Digital Centre",
+    period: "Sep - Nov 2023",
     description:
       "Resolved hardware/software issues, supported LAN management, on-site ICT support, and configured antivirus/system security.",
   },
   {
     role: "AI Data Annotator / Content Reviewer",
     company: "Remotasks",
-    period: "Jan — Dec 2023",
+    period: "Jan - Dec 2023",
     description: "Reviewed and evaluated AI-generated content.",
   },
   {
     role: "Content Writer",
     company: "Various Media Platforms",
-    period: "2019 — 2022",
+    period: "2019 - 2022",
     description:
       "Researched and published SEO-optimized news and entertainment content.",
   },
@@ -77,7 +78,7 @@ export default function Home() {
   return (
     <div>
       <Helmet>
-        <title>Frankline Macharia — Front-End & Software Developer | SEO & GEO Specialist</title>
+        <title>Frankline Macharia - Front-End & Software Developer | SEO & GEO Specialist</title>
         <meta
           name="description"
           content="Front-end & software developer, SEO/GEO specialist in Nakuru, Kenya. Founder of Rent Sawa Technologies. See selected projects and work history."
@@ -105,7 +106,7 @@ export default function Home() {
                     {project.title}
                   </span>
                   <span className="ml-2 text-sm text-neutral-500">
-                    — {project.description}
+                    - {project.description}
                   </span>
                 </span>
 
@@ -122,6 +123,43 @@ export default function Home() {
           className="mt-5 inline-block text-sm text-neutral-500 transition-colors hover:text-emerald-600"
         >
           + {otherProjectsCount} more projects →
+        </a>
+      </section>
+
+      {/* SERVICES TEASER */}
+      <section className="mt-16">
+        <p className="text-sm font-medium text-emerald-600">Services</p>
+        <h2 className="mt-1 text-2xl font-semibold tracking-tight text-neutral-950">
+          What I can help with
+        </h2>
+
+        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {[
+            { icon: Code2, title: "Web Development" },
+            { icon: Search, title: "SEO & GEO" },
+            { icon: Bot, title: "Automation & Bots" },
+            { icon: PenLine, title: "Content & Blogging" },
+          ].map((service) => {
+            const Icon = service.icon;
+            return (
+              <div
+                key={service.title}
+                className="flex items-center gap-3 rounded-md border border-neutral-200 px-4 py-3"
+              >
+                <Icon size={18} className="shrink-0 text-emerald-600" />
+                <span className="text-sm font-medium text-neutral-800">
+                  {service.title}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+
+        <a
+          href="/services"
+          className="mt-4 inline-block text-sm text-neutral-500 transition-colors hover:text-emerald-600"
+        >
+          See all services →
         </a>
       </section>
 
@@ -159,7 +197,7 @@ export default function Home() {
         <p className="text-sm font-medium text-emerald-600">About</p>
         <p className="mt-2 text-base leading-7 text-neutral-600">
           I build websites, web apps and automation tools that solve
-          practical problems — currently focused on web development and
+          practical problems - currently focused on web development and
           SEO at Schlacht Media, alongside founding Rent Sawa Technologies
           and freelance work.
         </p>

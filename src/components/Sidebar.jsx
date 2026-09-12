@@ -9,6 +9,7 @@ import {
   Folder,
   PenLine,
   FileText,
+  Wrench,
 } from "lucide-react";
 
 function GithubIcon(props) {
@@ -31,6 +32,7 @@ const navLinks = [
   { to: "/", label: "Home", icon: Home },
   { to: "/about", label: "About", icon: User },
   { to: "/projects", label: "Projects", icon: Folder },
+  { to: "/services", label: "Services", icon: Wrench },
   { to: "/writing", label: "Writing", icon: PenLine },
   { to: "/cv", label: "CV", icon: FileText },
   { to: "/contact", label: "Contact", icon: Mail },
