@@ -7,7 +7,7 @@ export default function About() {
         <title>About - Frankline Macharia</title>
         <meta
           name="description"
-          content="About Frankline Macharia - full-stack developer specializing in WordPress, automation and SEO/GEO, based in Nakuru, Kenya, currently at Schlacht Media and founder of Rent Sawa Technologies."
+          content="About Frankline Macharia - full-stack developer building SaaS products, WordPress platforms and automation tools, based in Nakuru, Kenya, currently at Schlacht Media and founder of Rent Sawa Technologies."
         />
       </Helmet>
 
@@ -18,7 +18,7 @@ export default function About() {
 
       <div className="mt-6 space-y-5 text-base leading-7 text-neutral-600">
         <p>
-          I'm a full-stack developer specializing in WordPress, automation and SEO/GEO, based in Nakuru,
+          I'm a full-stack developer building SaaS products, WordPress platforms and automation tools, based in Nakuru,
           Kenya, with over four years of hands-on experience building
           websites, web applications, automation tools and content
           platforms.

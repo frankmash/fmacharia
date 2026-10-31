@@ -4,6 +4,7 @@ import { Code2, Search, Bot, PenLine, ArrowUpRight } from "lucide-react";
 const builds = [
   {
     title: "RentSawa",
+    featured: true,
     url: "https://rentsawa.com/",
     status: "Live",
     description:
@@ -33,14 +34,6 @@ const builds = [
     stack: ["WordPress", "Kadence", "PHP"],
   },
   {
-    title: "Website Intelligence Engine",
-    url: "https://github.com/frankmash/website-intelligence-engine",
-    status: "Open source",
-    description:
-      "Analyzes site content and structure to surface SEO and content insights.",
-    stack: ["Python", "SEO"],
-  },
-  {
     title: "Echo Game",
     url: "https://echo-game-jade.vercel.app/",
     status: "Live",
@@ -55,7 +48,7 @@ const layers = [
   ["Data", "PostgreSQL, MySQL, REST APIs"],
   ["WordPress", "Custom themes and plugins, WooCommerce"],
   ["Automation", "Python, Telegram bots, scrapers, custom workflows"],
-  ["Search", "Technical SEO, GEO, Google Analytics, Search Console"],
+  ["Search", "Technical SEO, GEO (getting found by AI answer engines like ChatGPT), Google Analytics, Search Console"],
   ["Shipping", "Railway, Vercel, cPanel, Git and GitHub"],
 ];
 
@@ -126,7 +119,7 @@ export default function Home() {
           I build software that ships, and keeps running.
         </h2>
         <p className="mt-4 max-w-xl text-base leading-7 text-neutral-600">
-          SaaS platforms, WordPress systems, bots and automation, designed,
+          SaaS platforms, WordPress systems, bots and automation - designed,
           built and deployed end to end. Below is the proof.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
@@ -150,17 +143,17 @@ export default function Home() {
         <h2 className="mt-1 text-2xl font-semibold tracking-tight text-neutral-950">
           Real products, real stacks
         </h2>
-        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
           {builds.map((b) => (
             <a
               key={b.title}
               href={b.url}
               target="_blank"
               rel="noreferrer"
-              className="group flex flex-col rounded-lg border border-neutral-200 bg-white p-5 transition-colors hover:border-emerald-500"
+              className={`group flex flex-col rounded-lg border border-neutral-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-emerald-500 hover:shadow-sm ${b.featured ? "sm:col-span-2 sm:p-6" : ""}`}
             >
               <div className="flex items-start justify-between gap-3">
-                <h3 className="font-semibold text-neutral-950">{b.title}</h3>
+                <h3 className={`font-semibold text-neutral-950 ${b.featured ? "text-lg" : ""}`}>{b.title}</h3>
                 <ArrowUpRight
                   size={18}
                   className="shrink-0 text-neutral-400 transition-colors group-hover:text-emerald-600"
