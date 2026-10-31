@@ -7,7 +7,7 @@ export default function Cv() {
         <title>CV - Frankline Macharia</title>
         <meta
           name="description"
-          content="Download the CV of Frankline Macharia, front-end & software developer and SEO/GEO specialist based in Nakuru, Kenya."
+          content="Download the CV of Frankline Macharia, full-stack developer specializing in WordPress, automation and SEO/GEO, based in Nakuru, Kenya."
         />
       </Helmet>
 
@@ -17,7 +17,7 @@ export default function Cv() {
       </h1>
 
       <p className="mt-4 text-base leading-7 text-neutral-600">
-        Front-end & software developer, SEO/GEO specialist - experience, projects and
+        Full-stack developer (WordPress, automation, SEO/GEO) - experience, projects and
         skills, in one PDF.
       </p>
 
