@@ -138,11 +138,11 @@ export default function Sidebar() {
               to={link.to}
               className={
                 active
-                  ? "flex shrink-0 items-center gap-2.5 whitespace-nowrap rounded-md border border-emerald-500 bg-emerald-50 px-3 py-2 font-medium text-emerald-700 transition-colors"
-                  : "flex shrink-0 items-center gap-2.5 whitespace-nowrap rounded-md border border-transparent px-3 py-2 text-neutral-600 transition-colors hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700"
+                  ? "flex shrink-0 items-center gap-2 sm:gap-2.5 whitespace-nowrap rounded-md border border-emerald-500 bg-emerald-50 px-2.5 py-1.5 text-[13px] sm:px-3 sm:py-2 sm:text-sm font-medium text-emerald-700 transition-colors"
+                  : "flex shrink-0 items-center gap-2 sm:gap-2.5 whitespace-nowrap rounded-md border border-transparent px-2.5 py-1.5 text-[13px] sm:px-3 sm:py-2 sm:text-sm text-neutral-600 transition-colors hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700"
               }
             >
-              <Icon size={17} className="shrink-0" />
+              <Icon size={17} className="hidden shrink-0 sm:block" />
               {link.label}
             </Link>
           );
