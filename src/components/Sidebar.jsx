@@ -42,7 +42,7 @@ export default function Sidebar() {
   const location = useLocation();
 
   return (
-    <aside className="flex shrink-0 flex-col gap-8 sm:sticky sm:top-16 sm:h-fit sm:w-56">
+    <aside className="glass flex shrink-0 flex-col gap-6 rounded-3xl p-5 sm:sticky sm:top-10 sm:h-fit sm:w-64 sm:p-6">
       <div>
         <div className="flex flex-row-reverse items-center justify-end gap-4 sm:flex-col sm:items-start sm:justify-start sm:gap-0">
           {/* PHOTO ZOOM: to zoom in more, raise the number in scale(1.15) below.

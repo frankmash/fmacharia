@@ -1,3 +1,4 @@
+import StackCard from "../components/StackCard";
 import { Helmet } from "react-helmet-async";
 import { Code2, Search, Bot, PenLine } from "lucide-react";
 
@@ -32,47 +33,31 @@ export default function Services() {
   return (
     <div>
       <Helmet>
-        <title>Services — Frankline Macharia</title>
-        <meta
-          name="description"
-          content="Web development, SEO/GEO, automation and content services from Frankline Macharia, a front-end & software developer based in Nakuru, Kenya."
-        />
+        <title>Services - Frankline Macharia</title>
+        <meta name="description" content="Web development, SEO/GEO, automation and content services from Frankline Macharia in Nakuru, Kenya." />
       </Helmet>
-
-      <p className="text-sm font-medium text-emerald-600">Services</p>
-      <h1 className="mt-1 text-3xl font-semibold tracking-tight text-neutral-950">
-        What I can help with
-      </h1>
-
-      <p className="mt-4 max-w-xl text-base leading-7 text-neutral-600">
-        Take an idea, build it, make it grow. Here's where I can help.
-      </p>
-
-      <div className="mt-8 divide-y divide-neutral-200 border-t border-neutral-200">
-        {services.map((service) => {
-          const Icon = service.icon;
-          return (
-            <div key={service.title} className="flex gap-4 py-6">
-              <Icon size={22} className="mt-0.5 shrink-0 text-emerald-600" />
+      <StackCard index={0}>
+        <p className="text-sm font-medium text-emerald-600">Services</p>
+        <h1 className="mt-1 text-2xl font-bold text-neutral-950">What I can help with</h1>
+        <p className="mt-3 max-w-xl text-sm leading-6 text-neutral-600">Take an idea, build it, make it grow. Here's where I can help.</p>
+      </StackCard>
+      {services.map((s, i) => {
+        const Icon = s.icon;
+        return (
+          <StackCard key={s.title} index={i + 1}>
+            <div className="flex gap-4">
+              <Icon size={24} className="mt-0.5 shrink-0 text-emerald-600" />
               <div>
-                <h3 className="text-base font-medium text-neutral-950">
-                  {service.title}
-                </h3>
-                <p className="mt-1 max-w-xl text-sm leading-6 text-neutral-500">
-                  {service.description}
-                </p>
+                <h3 className="font-semibold text-neutral-950">{s.title}</h3>
+                <p className="mt-1 max-w-xl text-sm leading-6 text-neutral-600">{s.description}</p>
               </div>
             </div>
-          );
-        })}
-      </div>
-
-      <a
-        href="/contact"
-        className="mt-8 inline-block rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-emerald-700"
-      >
-        Get in touch →
-      </a>
+          </StackCard>
+        );
+      })}
+      <StackCard index={services.length + 1}>
+        <a href="/contact" className="inline-block rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-emerald-700">Get in touch →</a>
+      </StackCard>
     </div>
   );
 }
