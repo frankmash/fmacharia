@@ -46,6 +46,11 @@ const projects = [
     url: "https://eafeed.com/",
   },
   {
+    title: "FootXtra",
+    description: "Live football data hub on a custom WordPress child theme.",
+    url: "https://footxtra.com/",
+  },
+  {
     title: "RVNP Customer Service Bot",
     description:
       "Chatbot for Rift Valley National Polytechnic helping students with queries on courses, accommodation and HELB loans. Built as a contributor, 2025.",

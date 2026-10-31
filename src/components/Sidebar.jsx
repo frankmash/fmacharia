@@ -71,7 +71,7 @@ export default function Sidebar() {
         </div>
 
         <p className="mt-1 text-sm text-neutral-500">
-          Front-End & Software Developer | SEO & GEO Specialist
+          Full-Stack Developer | WordPress, Automation & SEO/GEO
         </p>
         <p className="text-sm text-neutral-500">Nakuru, Kenya</p>
 
