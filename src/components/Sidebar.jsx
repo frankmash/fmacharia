@@ -51,7 +51,7 @@ export default function Sidebar() {
               "50% 0%" = horizontally centered, top of photo aligned to top
               (shows your forehead). Raise the second number (e.g. "50% 15%")
               to crop in from the top and show more chest/shoulders instead. */}
-          <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-emerald-500 bg-white sm:h-20 sm:w-20">
+          <div className="h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-emerald-500 bg-white sm:h-20 sm:w-20">
             <img
               src="/images/frank.jpg"
               alt="Frankline Macharia"
@@ -60,11 +60,11 @@ export default function Sidebar() {
             />
           </div>
 
-          <h1 className="mt-1 flex items-baseline gap-2 whitespace-nowrap sm:mt-4">
-            <span className="text-2xl font-extrabold tracking-tight text-neutral-950">
+          <h1 className="mt-1 flex min-w-0 flex-wrap items-baseline gap-x-2 sm:mt-4">
+            <span className="text-xl font-extrabold tracking-tight sm:text-2xl text-neutral-950">
               Frankline
             </span>
-            <span className="font-script text-3xl leading-none text-emerald-600">
+            <span className="font-script text-2xl leading-none sm:text-3xl text-emerald-600">
               Macharia
             </span>
           </h1>

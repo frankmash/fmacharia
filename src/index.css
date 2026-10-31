@@ -120,3 +120,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid #059669; outline-offs
 aside .overflow-hidden.rounded-full {
   box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.22), 0 10px 28px rgba(5, 150, 105, 0.3);
 }
+
+/* Mobile fix: keep the zoomed photo clipped to its circle */
+aside .overflow-hidden.rounded-full { isolation: isolate; }
