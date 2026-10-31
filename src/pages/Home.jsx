@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import StackCard from "../components/StackCard";
+import CardFan from "../components/PlayingCard";
 import { Code2, Search, Bot, PenLine, ArrowUpRight } from "lucide-react";
 
 const builds = [
@@ -113,10 +115,11 @@ export default function Home() {
         />
       </Helmet>
 
-      <section>
-        <p className="text-sm font-medium text-emerald-600">Full-Stack Developer</p>
-        <h2 className="mt-2 text-3xl font-extrabold leading-tight tracking-tight text-neutral-950 sm:text-4xl">
-          I build software that ships, and keeps running.
+      <StackCard index={0}>
+<div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+<div className="min-w-0">
+        <h2 className="text-2xl font-bold leading-tight text-neutral-950 sm:text-4xl">
+          I build software that <span className="text-gradient">ships</span>, and keeps running.
         </h2>
         <p className="mt-4 max-w-xl text-base leading-7 text-neutral-600">
           SaaS platforms, WordPress systems, bots and automation - designed,
@@ -136,9 +139,12 @@ export default function Home() {
             Get in touch
           </a>
         </div>
-      </section>
+      </div>
+<CardFan />
+</div>
+</StackCard>
 
-      <section id="builds" className="mt-16 scroll-mt-8">
+      <StackCard index={1} id="builds">
         <p className="text-sm font-medium text-emerald-600">Featured builds</p>
         <h2 className="mt-1 text-2xl font-semibold tracking-tight text-neutral-950">
           Real products, real stacks
@@ -183,9 +189,9 @@ export default function Home() {
         >
           All projects →
         </a>
-      </section>
+      </StackCard>
 
-      <section className="mt-16">
+      <StackCard index={2}>
         <p className="text-sm font-medium text-emerald-600">Stack</p>
         <h2 className="mt-1 text-2xl font-semibold tracking-tight text-neutral-950">
           What I build with
@@ -198,9 +204,9 @@ export default function Home() {
             </div>
           ))}
         </dl>
-      </section>
+      </StackCard>
 
-      <section className="mt-16">
+      <StackCard index={3}>
         <p className="text-sm font-medium text-emerald-600">Services</p>
         <h2 className="mt-1 text-2xl font-semibold tracking-tight text-neutral-950">
           What I can help with
@@ -222,9 +228,9 @@ export default function Home() {
         >
           See all services →
         </a>
-      </section>
+      </StackCard>
 
-      <section className="mt-16">
+      <StackCard index={4}>
         <p className="text-sm font-medium text-emerald-600">Work</p>
         <h2 className="mt-1 text-2xl font-semibold tracking-tight text-neutral-950">
           Where I've worked
@@ -242,9 +248,9 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </StackCard>
 
-      <section className="mt-16 rounded-lg border border-emerald-200 bg-emerald-50 p-6">
+      <StackCard index={5}>
         <h2 className="text-xl font-semibold tracking-tight text-neutral-950">
           Have something that needs building?
         </h2>
@@ -257,7 +263,7 @@ export default function Home() {
         >
           Get in touch →
         </a>
-      </section>
+      </StackCard>
     </div>
   );
 }

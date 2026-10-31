@@ -1,3 +1,5 @@
+import StackCard from "../components/StackCard";
+import { ArrowUpRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 const projects = [
@@ -63,42 +65,23 @@ export default function Projects() {
     <div>
       <Helmet>
         <title>Projects - Frankline Macharia</title>
-        <meta
-          name="description"
-          content="Projects built by Frankline Macharia, including RentSawa, Edunotes, Website Intelligence Engine and more."
-        />
+        <meta name="description" content="Projects built by Frankline Macharia, including RentSawa, Edunotes, FootXtra and more." />
       </Helmet>
-
-      <p className="text-sm font-medium text-emerald-600">Projects</p>
-      <h1 className="mt-1 text-3xl font-semibold tracking-tight text-neutral-950">
-        Things I've built
-      </h1>
-
-      <ul className="mt-8 divide-y divide-neutral-200 border-t border-neutral-200">
-        {projects.map((project) => (
-          <li key={project.title}>
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noreferrer"
-              className="group flex items-baseline justify-between gap-4 py-5"
-            >
-              <span>
-                <span className="font-medium text-neutral-950 transition-colors group-hover:text-emerald-600">
-                  {project.title}
-                </span>
-                <span className="ml-2 text-sm text-neutral-500">
-                  - {project.description}
-                </span>
-              </span>
-
-              <span className="shrink-0 text-neutral-300 transition-colors group-hover:text-emerald-600">
-                ↗
-              </span>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <StackCard index={0}>
+        <p className="text-sm font-medium text-emerald-600">Projects</p>
+        <h1 className="mt-1 text-2xl font-bold text-neutral-950">Things I've built</h1>
+      </StackCard>
+      {projects.map((p, i) => (
+        <StackCard key={p.title} index={i + 1}>
+          <a href={p.url} target="_blank" rel="noreferrer" className="group flex items-start justify-between gap-4">
+            <span>
+              <span className="font-semibold text-neutral-950 transition-colors group-hover:text-emerald-600">{p.title}</span>
+              <span className="mt-1 block text-sm leading-6 text-neutral-600">{p.description}</span>
+            </span>
+            <ArrowUpRight size={18} className="mt-1 shrink-0 text-neutral-400 transition-colors group-hover:text-emerald-600" />
+          </a>
+        </StackCard>
+      ))}
     </div>
   );
 }

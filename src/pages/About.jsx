@@ -1,8 +1,10 @@
+import StackCard from "../components/StackCard";
 import { Helmet } from "react-helmet-async";
 
 export default function About() {
   return (
-    <div className="max-w-2xl">
+    <div>
+<StackCard index={0}>
       <Helmet>
         <title>About - Frankline Macharia</title>
         <meta
@@ -39,7 +41,9 @@ export default function About() {
         </p>
       </div>
 
-      <div className="mt-10">
+      </StackCard>
+<StackCard index={1}>
+<div>
         <p className="text-sm text-neutral-500">Skills</p>
         <div className="mt-3 space-y-2 text-sm">
           <p>
@@ -67,7 +71,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className="mt-10 flex gap-3">
+      </StackCard>
+<StackCard index={2}>
+<div className="flex gap-3">
         <a
           href="/cv"
           className="rounded-full border border-neutral-300 px-4 py-2 text-sm text-neutral-700 transition hover:border-emerald-500 hover:text-emerald-600"
@@ -81,6 +87,7 @@ export default function About() {
           Get in touch
         </a>
       </div>
+      </StackCard>
     </div>
   );
 }
